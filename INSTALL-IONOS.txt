@@ -1,0 +1,25 @@
+DL7YAL.de - IONOS Upload-Paket
+=============================
+
+TECHNIK
+- Reine statische Website: HTML, CSS, JavaScript, SVG.
+- Kein npm, kein PHP, keine Datenbank und kein Build-Prozess auf IONOS erforderlich.
+- Relative Links und Assets: funktioniert unabhängig vom lokalen Verzeichnisnamen, sobald der Paketinhalt im Domain-Webroot liegt.
+
+UPLOAD
+1. ZIP lokal entpacken.
+2. Im IONOS Webspace/Dateimanager das Verzeichnis öffnen, auf das dl7yal.de zeigt.
+3. Den INHALT dieses Ordners hochladen, sodass index.html direkt im Domain-Webroot liegt.
+4. Falls dort eine alte index.html liegt: vorher sichern/umbenennen und anschließend ersetzen.
+5. Domain im Browser öffnen und Home, Navigation, Mobilansicht, Impressum und Datenschutz prüfen.
+
+WICHTIG VOR LIVE-SCHALTUNG
+- kontakt.html: öffentliche E-Mail-Adresse einsetzen.
+- impressum.html: reale Betreiber-/Adress-/ggf. Register-/Steuerdaten einsetzen.
+- datenschutz.html: reale Betreiberangaben und tatsächliche IONOS-/E-Mail-Konfiguration rechtlich prüfen/einsetzen.
+- Danach finale Sichtprüfung und erst dann öffentlich freigeben.
+
+KOMPATIBILITÄT
+- index.html dient als Startseite.
+- .htaccess enthält nur defensive Standardoptionen und Cache-/Header-Regeln in <IfModule>-Blöcken.
+- Falls ein konkreter IONOS-Tarif .htaccess nicht akzeptiert, kann die Datei entfernt werden; die Website funktioniert weiterhin.
